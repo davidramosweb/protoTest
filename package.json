@@ -1,0 +1,14 @@
+{
+  "name": "lehibou-proto",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "d.ramos@lehibou.com",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/microservices": "^8.0.5",
+    "ts-proto": "^1.82.2"
+  }
+}

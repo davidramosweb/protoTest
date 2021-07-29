@@ -1,8 +1,12 @@
 {
-  "name": "lehibou-protos",
+  "name": "lehibou-grpc",
   "version": "1.0.0",
   "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "sh compile.proto.sh && tsc -p tsconfig.json",
+    "generate-barrels": "barrelsby --delete --directory=./build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "d.ramos@lehibou.com",
@@ -10,5 +14,8 @@
   "dependencies": {
     "@nestjs/microservices": "^8.0.5",
     "ts-proto": "^1.82.2"
+  },
+  "devDependencies": {
+    "barrelsby": "^2.2.0"
   }
 }
